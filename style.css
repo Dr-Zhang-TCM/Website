@@ -1,0 +1,19 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #B5BAD0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+html, body {
+    height: 100%;
+}
+
+h1, h2, p {
+    text-align: center;
+    color: #004c4c;
+    margin: 0;
+    padding: 0;
+}
