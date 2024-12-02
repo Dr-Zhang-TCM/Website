@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirecting...</title>
     <script>
-        var redirectUrl = "/home" + ".html";
-        window.location.replace(redirectUrl);
+        var path = window.location.pathname;
+        
+        if (!path.includes('.html') && path !== "/404") {
+            window.location.replace(path + ".html");
+        }
     </script>
 </head>
 <body>
