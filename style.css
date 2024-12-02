@@ -45,3 +45,43 @@ main {
     padding: 20px;
     text-align: center;
 }
+
+
+/* About Us general */
+.specialists {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.specialist {
+    background-color: #fff;
+    color: #1e152a;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    flex: 1;
+    max-width: 45%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.specialist h2 {
+    margin-top: 0;
+}
+
+.specialist p {
+    line-height: 1.6;
+}
+
+/* About Us mobile addition*/
+@media (max-width: 768px) {
+    .specialists {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .specialist {
+        max-width: 100%;
+    }
+}
