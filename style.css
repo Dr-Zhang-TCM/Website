@@ -74,7 +74,18 @@ main {
     line-height: 1.6;
 }
 
-/* About Us mobile addition*/
+/* Centering bullet points and text */
+ul {
+    list-style-position: inside; /* Moves the bullet points inside the container */
+    text-align: center; /* Centers the text and bullets */
+    padding: 0;
+}
+
+ul li {
+    text-align: center; /* Centers the individual list items */
+}
+
+/* About Us mobile addition */
 @media (max-width: 768px) {
     .specialists {
         flex-direction: column;
