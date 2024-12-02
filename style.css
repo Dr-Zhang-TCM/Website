@@ -19,7 +19,7 @@ header ul {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center;
+    justify-content: right;
 }
 
 header ul li {
