@@ -6,8 +6,12 @@
     <title>Redirecting...</title>
     <script>
         var path = window.location.pathname;
-        
-        if (!path.includes('.html') && path !== "/404") {
+
+        // If the path is just the root ("/"), redirect to "home.html"
+        if (path === "/" || path === "") {
+            window.location.replace("/home.html");
+        } else if (!path.includes('.html')) {
+            // Append ".html" for all other pages that are not in the form of "page.html"
             window.location.replace(path + ".html");
         }
     </script>
