@@ -6,13 +6,11 @@
     <title>Page Not Found</title>
     <link rel="stylesheet" href="style.css">
     <script>
-        // Get the current path
         var path = window.location.pathname;
 
-        // Check if the path is already a valid .html page or the 404 page itself
         if (!path.includes('.html') && path !== "/404") {
-            var redirectUrl = path + ".html"; // Append .html to the path
-            window.location.replace(redirectUrl);  // Redirect to the corresponding .html file
+            var redirectUrl = path + ".html";
+            window.location.replace(redirectUrl);
         }
     </script>
 </head>
