@@ -66,25 +66,6 @@ main {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.specialist h2 {
-    margin-top: 0;
-}
-
-.specialist p {
-    line-height: 1.6;
-}
-
-/* Centering bullet points and text */
-ul {
-    list-style-position: inside; /* Moves the bullet points inside the container */
-    text-align: center; /* Centers the text and bullets */
-    padding: 0;
-}
-
-ul li {
-    text-align: center; /* Centers the individual list items */
-}
-
 /* About Us mobile addition */
 @media (max-width: 768px) {
     .specialists {
