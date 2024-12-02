@@ -9,14 +9,11 @@
 
         // If the path is just the root ("/"), redirect to "home.html"
         if (path === "/" || path === "") {
-            window.location.replace("/home.html");
-        } else if (!path.includes('.html')) {
-            // Append ".html" for all other pages that are not in the form of "page.html"
-            window.location.replace(path + ".html");
+            window.location.replace("/home"); // Redirect to "/home" (without ".html")
         }
     </script>
 </head>
 <body>
-    <p>If you are not redirected, <a href="/home.html">click here</a>.</p>
+    <p>If you are not redirected, <a href="/home">click here</a>.</p>
 </body>
 </html>
