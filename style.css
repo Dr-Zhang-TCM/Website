@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    background-color: #a5c882;
     color: #1e152a;
 }
 
@@ -38,21 +39,4 @@ header ul li a:hover {
 main {
     padding: 20px;
     text-align: center;
-}
-
-/* Background Colors */
-body.grey {
-    background-color: #4E6766;
-}
-
-body.blue {
-    background-color: #5ab1bb;
-}
-
-body.green {
-    background-color: #a5c882;
-}
-
-body.yellow {
-    background-color: #f7dd72;
 }
