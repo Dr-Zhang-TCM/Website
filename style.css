@@ -10,7 +10,7 @@ body {
 header {
     background: #1e152a;
     color: #fff;
-    padding: 20px 15px auto;
+    padding: 50px auto 50px auto;
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -66,7 +66,7 @@ main {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* About Us mobile addition */
+/* About Us on mobile */
 @media (max-width: 768px) {
     .specialists {
         flex-direction: column;
