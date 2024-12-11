@@ -51,6 +51,22 @@ main {
     text-align: center;
 }
 
+main p a {
+    color: #1e152a;
+    text-decoration: none;
+    border: #1e152a;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    background-color: #F7DD72;
+}
+
+main p a:hover {
+    color: #fff;
+    border: 1px solid #1e152a;
+    border-style: inset;
+    background-color: #1e152a;
+}
+
 /* Contact Us */
 .contacts {
     display: flex;
@@ -63,7 +79,7 @@ main {
     background-color: #F7DD72;
     color: #1e152a;
     padding: 15px;
-    border: 1px solid black;
+    border: 1px solid #1e152a;
     border-radius: 8px;
     flex: 1;
     max-width: 45%;
@@ -75,7 +91,7 @@ main {
     padding: 0.625em;
     height: 300px;
     overflow: hidden;
-    border: 1px solid black;
+    border: 1px solid #1e152a;
     border-radius: 0.5em;
 }
 
@@ -103,7 +119,7 @@ main {
     background-color: #F7DD72;
     color: #1e152a;
     padding: 0.9375em;
-    border: 1px solid black;
+    border: 1px solid #1e152a;
     border-radius: 0.5em;
     flex: 1 1 250px;
     max-width: 350px;
