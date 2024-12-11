@@ -70,6 +70,21 @@ main {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.maps {
+    position: relative;
+    padding: 0.625em;
+    height: 300px;
+    overflow: hidden;
+}
+
+.maps iframe {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100% !important;
+    height: 100% !important;
+}
+
 /* About Us general */
 .specialists {
     display: flex;
@@ -87,7 +102,6 @@ main {
     border: 1px solid #ddd;
     border-radius: 8px;
     flex: 1;
-    max-width: 45%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
