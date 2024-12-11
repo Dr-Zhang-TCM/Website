@@ -73,9 +73,11 @@ main {
 /* About Us general */
 .specialists {
     display: flex;
-    gap: 20px;
-    justify-content: space-around;
     padding: 20px;
+    gap: 20px;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
 }
 
 .specialist {
@@ -87,6 +89,12 @@ main {
     flex: 1;
     max-width: 45%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.specialist ul {
+    list-style-position: inside; /* Align bullets with text */
+    padding-left: 20px; /* Add space from the left edge */
+    margin: 0; /* Remove default margin */
 }
 
 /* About Us on mobile */
