@@ -63,7 +63,7 @@ main {
     background-color: #F7DD72;
     color: #1e152a;
     padding: 15px;
-    border: 1px solid #ddd;
+    border: 1px solid black;
     border-radius: 8px;
     flex: 1;
     max-width: 45%;
@@ -75,6 +75,7 @@ main {
     padding: 0.625em;
     height: 300px;
     overflow: hidden;
+    border: 1px solid black;
 }
 
 .maps iframe {
@@ -101,7 +102,7 @@ main {
     background-color: #F7DD72;
     color: #1e152a;
     padding: 0.9375em;
-    border: 1px solid #ddd;
+    border: 1px solid black;
     border-radius: 0.5em;
     flex: 1 1 250px;
     max-width: 350px;
