@@ -88,20 +88,23 @@ main {
 /* About Us general */
 .specialists {
     display: flex;
-    padding: 20px;
-    gap: 20px;
-    justify-content: space-between;
+    gap: 1.25em;
+    justify-content: center;
     text-align: center;
-    align-items: center;
+    padding: 1.25em;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .specialist {
     background-color: #F7DD72;
     color: #1e152a;
-    padding: 15px;
+    padding: 0.9375em;
     border: 1px solid #ddd;
-    border-radius: 8px;
-    flex: 1;
+    border-radius: 0.5em;
+    flex: 1 1 250px;
+    max-width: 350px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -113,13 +116,17 @@ main {
 }
 
 /* About Us on mobile */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .specialists {
         flex-direction: column;
-        align-items: center;
+        gap: 1em;
+        padding: 1em;
+        width: 90%;
     }
 
     .specialist {
-        max-width: 100%;
+        flex: 0 1 auto;
+        width: 100%;
+        max-width: none;
     }
 }
