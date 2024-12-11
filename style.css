@@ -10,7 +10,7 @@ body {
 header {
     background: #1e152a;
     color: #fff;
-    padding: 25px 0;
+    padding: 1.5625em 0.625em;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -92,9 +92,10 @@ main {
 }
 
 .specialist ul {
-    list-style-position: inside; /* Align bullets with text */
-    padding-left: 20px; /* Add space from the left edge */
-    margin: 0; /* Remove default margin */
+    text-align: left;
+    list-style-position: inside;
+    padding-left: 20px;
+    margin: 0;
 }
 
 /* About Us on mobile */
