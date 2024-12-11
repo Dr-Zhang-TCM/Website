@@ -51,6 +51,24 @@ main {
     text-align: center;
 }
 
+/* Contact Us */
+.contacts {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.contact {
+    background-color: #fff;
+    color: #1e152a;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    flex: 1;
+    max-width: 45%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
 /* About Us general */
 .specialists {
