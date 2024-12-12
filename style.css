@@ -148,3 +148,14 @@ main p a:hover {
         max-width: none;
     }
 }
+
+/* Booking form */
+.bookingform {
+    text-align: left;
+    color: grey;
+    padding: 2em;
+}
+
+.submitbtn {
+    text-align: right;
+}
