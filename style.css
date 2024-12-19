@@ -81,20 +81,16 @@ main p a:hover {
 }
 
 .contacts p a {
+    color: #1e152a;
+    text-decoration: underline;
+}
+
+.contacts p a:hover {
     color: #fff;
-    text-decoration: none;
     border: 1px solid #1e152a;
     padding: 0.5em;
     border-radius: 0.5em;
     background-color: #1e152a;
-}
-
-.contacts p a:hover {
-    color: #1e152a;
-    border: 1px solid #1e152a;
-    padding: 0.5em;
-    border-radius: 0.5em;
-    background-color: #a5c882;
 }
 
 .maps {
