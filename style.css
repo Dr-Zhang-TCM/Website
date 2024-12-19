@@ -53,18 +53,12 @@ main {
 
 main p a {
     color: #1e152a;
-    text-decoration: none;
-    border: #1e152a;
-    padding: 0.5em;
-    border-radius: 0.5em;
-    background-color: #F7DD72;
+    text-decoration: underline;
 }
 
 main p a:hover {
-    color: #fff;
-    border: 1px solid #1e152a;
-    border-style: inset;
-    background-color: #1e152a;
+    color: #1e152a;
+    text-decoration: dotted;
 }
 
 /* Contact Us */
@@ -86,10 +80,27 @@ main p a:hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.contacts p a {
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #1e152a;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    background-color: #1e152a;
+}
+
+.contacts p a:hover {
+    color: #1e152a;
+    border: 1px solid #1e152a;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    background-color: #a5c882;
+}
+
 .maps {
     position: relative;
     padding: 0.625em;
-    height: 300px;
+    height: 18.75em;
     overflow: hidden;
     border: 1px solid #1e152a;
     border-radius: 0.5em;
@@ -147,6 +158,24 @@ main p a:hover {
         width: 100%;
         max-width: none;
     }
+}
+
+/* Services */
+.booking-btn p a {
+    color: #1e152a;
+    text-decoration: none;
+    border: 1px solid #F7DD72;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    background-color: #F7DD72;
+}
+
+.booking-btn p a:hover {
+    color: #fff;
+    border: 1px solid #1e152a;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    background-color: #1e152a;
 }
 
 /* Booking form */
