@@ -1,3 +1,5 @@
+/* Applies to all pages */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0 auto;
@@ -65,6 +67,87 @@ main p a:hover {
     background-color: #1e152a;
 }
 
+
+/* Individual Pages */
+
+/* Home Page */
+
+
+/* About Us */
+.specialists {
+    display: flex;
+    gap: 1.25em;
+    justify-content: space-around;
+    text-align: center;
+    padding: 0.9em;
+    flex-wrap: wrap;
+    max-width: 75em;
+    margin: 0 auto;
+}
+
+.specialist {
+    background-color: #F7DD72;
+    color: #1e152a;
+    padding: 0.9375em;
+    border: 1px solid #1e152a;
+    border-radius: 0.5em;
+    flex: 1 1 250px;
+    max-width: 350px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.specialist ul {
+    text-align: left;
+    list-style-position: inside;
+    padding-left: 20px;
+    margin: 0;
+}
+
+/* About Us on smaller screens */
+@media screen and (max-width: 768px) {
+    .specialists {
+        flex-direction: column;
+        gap: 1em;
+        padding: 1em;
+        width: 90%;
+    }
+
+    .specialist {
+        flex: 0 1 auto;
+        width: 100%;
+        max-width: none;
+    }
+}
+
+/* Services */
+.booking-btn p a {
+    color: #1e152a;
+    text-decoration: none;
+    border: 1px solid #F7DD72;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    background-color: #F7DD72;
+}
+
+.booking-btn p a:hover {
+    color: #fff;
+    border: 1px solid #1e152a;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    background-color: #1e152a;
+}
+
+/* Booking form */
+.bookingform {
+    text-align: left;
+    color: grey;
+    padding: 2em;
+}
+
+.submitbtn {
+    text-align: right;
+}
+
 /* Contact Us */
 .contacts {
     display: flex;
@@ -112,79 +195,4 @@ main p a:hover {
     left: 0px;
     width: 100% !important;
     height: 100% !important;
-}
-
-/* About Us general */
-.specialists {
-    display: flex;
-    gap: 1.25em;
-    justify-content: space-around;
-    text-align: center;
-    padding: 0.9em;
-    flex-wrap: wrap;
-    max-width: 75em;
-    margin: 0 auto;
-}
-
-.specialist {
-    background-color: #F7DD72;
-    color: #1e152a;
-    padding: 0.9375em;
-    border: 1px solid #1e152a;
-    border-radius: 0.5em;
-    flex: 1 1 250px;
-    max-width: 350px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.specialist ul {
-    text-align: left;
-    list-style-position: inside;
-    padding-left: 20px;
-    margin: 0;
-}
-
-/* About Us on mobile */
-@media screen and (max-width: 768px) {
-    .specialists {
-        flex-direction: column;
-        gap: 1em;
-        padding: 1em;
-        width: 90%;
-    }
-
-    .specialist {
-        flex: 0 1 auto;
-        width: 100%;
-        max-width: none;
-    }
-}
-
-/* Services */
-.booking-btn p a {
-    color: #1e152a;
-    text-decoration: none;
-    border: 1px solid #F7DD72;
-    padding: 0.5em;
-    border-radius: 0.5em;
-    background-color: #F7DD72;
-}
-
-.booking-btn p a:hover {
-    color: #fff;
-    border: 1px solid #1e152a;
-    padding: 0.5em;
-    border-radius: 0.5em;
-    background-color: #1e152a;
-}
-
-/* Booking form */
-.bookingform {
-    text-align: left;
-    color: grey;
-    padding: 2em;
-}
-
-.submitbtn {
-    text-align: right;
 }
