@@ -57,8 +57,12 @@ main p a {
 }
 
 main p a:hover {
-    color: #1e152a;
-    text-decoration: dotted;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #1e152a;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    background-color: #1e152a;
 }
 
 /* Contact Us */
