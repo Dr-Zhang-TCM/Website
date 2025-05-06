@@ -71,7 +71,10 @@ main p a:hover {
 /* Individual Pages */
 
 /* Home Page */
-
+.homecontainer {
+    text-align: left;
+    justify-content: flex-start;
+}
 
 /* About Us */
 .specialists {
