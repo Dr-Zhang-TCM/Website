@@ -3,12 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DrZ-TCM Booking Page</title>
+    <title>DrZ-TCM Home Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <div class="header-left">Dr. Zhang TCM Home Page</div>
+        <nav>
+            <ul>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/bookings">Bookings</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <body>
     <main>
         <h1>Bookings</h1>
-
         <form action="https://formspree.io/f/xjkvdjka" method="POST">
             <label>
                 Full Name:
@@ -20,7 +34,7 @@
             </label><br>
             <label>
                 Phone Number:
-                <input type="number" name="phone" placeholder="07990808531"
+                <input type="number" name="phone" placeholder="07990808531">
             </label><br>
             <p>Select Services:</p>
             <input type="checkbox" name="service1">
