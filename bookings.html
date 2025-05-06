@@ -4,23 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DrZ-TCM Booking Page</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="header-left">Dr. Zhang TCM Booking Page</div>
-        <nav>
-            <ul>
-                <li><a href="/home">Home</a></li>
-                <li><a href="/about">About Us</a></li>
-                <li><a href="/services">Services</a></li>
-                <li><a href="/bookings">Bookings</a></li>
-                <li><a href="/contact">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
     <main>
         <h1>Bookings</h1>
+
+        <form action="https://formspree.io/f/xjkvdjka" method="POST">
+            <label>
+                Full Name:
+                <input type="text" name="name" placeholder="Jane Doe">
+            </label><br>
+            <label>
+                Email:
+                <input type="email" name="email" placeholder="janedoe@gmail.com">
+            </label><br>
+            <label>
+                Phone Number:
+                <input type="number" name="phone" placeholder="07990808531"
+            </label><br>
+            <p>Select Services:</p>
+            <input type="checkbox" name="service1">
+            <label for="service1">Service 1</label><br>
+            <input type="checkbox" name="service2">
+            <label for="service2">Service 2</label><br>
+            <br>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
     </main>
 </body>
 </html>
