@@ -169,7 +169,11 @@ main p a:hover {
 
 .td {
     padding: 15px;
-    width: 50%;
+    width: 33%;
+}
+
+.td-combo {
+    width: 100%;
 }
 
 .span {
