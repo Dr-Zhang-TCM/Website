@@ -48,6 +48,22 @@ header ul li a:hover {
     text-decoration: underline;
 }
 
+/* Header on smaller screens */
+@media screen and (max-width: 768px) {
+    .specialists {
+        flex-direction: column;
+        gap: 1em;
+        padding: 1em;
+        width: 90%;
+    }
+
+    .specialist {
+        flex: 0 1 auto;
+        width: 100%;
+        max-width: none;
+    }
+}
+
 main {
     padding: 20px;
     text-align: center;
