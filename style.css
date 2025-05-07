@@ -50,14 +50,14 @@ header ul li a:hover {
 
 /* Header on smaller screens */
 @media screen and (max-width: 768px) {
-    .specialists {
+    .header-left {
         flex-direction: column;
         gap: 1em;
         padding: 1em;
         width: 90%;
     }
 
-    .specialist {
+    .header ul li {
         flex: 0 1 auto;
         width: 100%;
         max-width: none;
