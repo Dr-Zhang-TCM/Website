@@ -50,8 +50,9 @@ header ul li a:hover {
 
 /* Header on smaller screens */
 @media screen and (max-width: 768px) {
-    .header-left {
+    .header ul {
         flex-direction: column;
+        align-items: flex-start;
         gap: 1em;
         padding: 1em;
         width: 90%;
@@ -155,6 +156,26 @@ main p a:hover {
     border-radius: 0.5em;
     background-color: #1e152a;
 }
+
+/* Service table */
+
+.servicecontainer {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.td {
+    padding: 15px;
+    width: 50%;
+}
+
+.span {
+    font-size: min(max(15px, 1.8vw), 30px);
+}
+
 
 /* Booking form */
 .bookingform {
