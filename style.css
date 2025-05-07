@@ -160,7 +160,7 @@ main p a:hover {
 /* Service table */
 
 .servicecontainer {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -170,10 +170,6 @@ main p a:hover {
 .td {
     padding: 15px;
     width: 33%;
-}
-
-.td-combo {
-    width: 100%;
 }
 
 .span {
