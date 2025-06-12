@@ -1,5 +1,6 @@
-/* Applies to all pages */
+/* Default settings (Desktop)*/
 
+/* Main settings */
 body {
     font-family: Arial, sans-serif;
     margin: 0 auto;
@@ -8,7 +9,6 @@ body {
     background-color: #a5c882;
     color: #1e152a;
 }
-
 header {
     background: #1e152a;
     color: #fff;
@@ -18,12 +18,10 @@ header {
     align-items: center;
     text-align: center;
 }
-
 .header-left {
     font-size: 1em;
     font-weight: bold;
 }
-
 header ul {
     list-style: none;
     padding: 0;
@@ -31,50 +29,27 @@ header ul {
     display: flex;
     align-items: center;
 }
-
 header ul li {
     font-size: 0.8125em;
     margin: 0 15px;
     vertical-align: middle;
     align-items: center;
 }
-
 header ul li a {
     color: #fff;
     text-decoration: none;
 }
-
 header ul li a:hover {
     text-decoration: underline;
 }
-
-/* Header on smaller screens */
-@media screen and (max-width: 768px) {
-    .header ul {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1em;
-        padding: 1em;
-        width: 90%;
-    }
-
-    .header ul li {
-        flex: 0 1 auto;
-        width: 100%;
-        max-width: none;
-    }
-}
-
 main {
     padding: 20px;
     text-align: center;
 }
-
 main p a {
     color: #1e152a;
     text-decoration: underline;
 }
-
 main p a:hover {
     color: #fff;
     text-decoration: none;
@@ -83,9 +58,6 @@ main p a:hover {
     border-radius: 0.5em;
     background-color: #1e152a;
 }
-
-
-/* Individual Pages */
 
 /* Home Page */
 .homecontainer {
@@ -104,7 +76,6 @@ main p a:hover {
     max-width: 75em;
     margin: 0 auto;
 }
-
 .specialist {
     background-color: #F7DD72;
     color: #1e152a;
@@ -115,28 +86,11 @@ main p a:hover {
     max-width: 350px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
 .specialist ul {
     text-align: left;
     list-style-position: inside;
     padding-left: 20px;
     margin: 0;
-}
-
-/* About Us on smaller screens */
-@media screen and (max-width: 768px) {
-    .specialists {
-        flex-direction: column;
-        gap: 1em;
-        padding: 1em;
-        width: 90%;
-    }
-
-    .specialist {
-        flex: 0 1 auto;
-        width: 100%;
-        max-width: none;
-    }
 }
 
 /* Services */
@@ -148,7 +102,6 @@ main p a:hover {
     border-radius: 0.5em;
     background-color: #F7DD72;
 }
-
 .booking-btn p a:hover {
     color: #fff;
     border: 1px solid #1e152a;
@@ -158,24 +111,20 @@ main p a:hover {
 }
 
 /* Service table */
-
 .servicecontainer {
     width: 90%;
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    text-align: center;
+    text-align: left;
 }
-
 .td {
     padding: 15px;
     width: 33%;
 }
-
 .span {
     font-size: min(max(15px, 1.8vw), 30px);
 }
-
 
 /* Booking form */
 .bookingform {
@@ -183,7 +132,6 @@ main p a:hover {
     color: grey;
     padding: 2em;
 }
-
 .submitbtn {
     text-align: right;
 }
@@ -195,7 +143,6 @@ main p a:hover {
     justify-content: space-around;
     padding: 20px;
 }
-
 .contact {
     background-color: #F7DD72;
     color: #1e152a;
@@ -206,12 +153,10 @@ main p a:hover {
     max-width: 45%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
 .contacts p a {
     color: #1e152a;
     text-decoration: underline;
 }
-
 .contacts p a:hover {
     color: #fff;
     border: 1px solid #1e152a;
@@ -219,7 +164,6 @@ main p a:hover {
     border-radius: 0.5em;
     background-color: #1e152a;
 }
-
 .maps {
     position: relative;
     padding: 0.625em;
@@ -228,11 +172,138 @@ main p a:hover {
     border: 1px solid #1e152a;
     border-radius: 0.5em;
 }
-
 .maps iframe {
     position: absolute;
     top: 0px;
     left: 0px;
     width: 100% !important;
     height: 100% !important;
+}
+
+
+/* Mobile settings */
+@media screen and (max-width: 768px) {
+    /* Main settings */
+    body {
+        margin: 0 auto;
+        padding: 0;
+        line-height: 1.6;
+    }
+    header {
+        padding: 1.5625em 0.625em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+    .header-left {
+        font-size: 1em;
+        font-weight: bold;
+    }
+    .header ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1em;
+        padding: 1em;
+        width: 90%;
+    }
+    .header ul li {
+        flex: 0 1 auto;
+        width: 100%;
+        max-width: none;
+    }
+    main {
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* Home Page */
+    .homecontainer {
+        text-align: left;
+        justify-content: flex-start;
+    }
+
+    /* About Us */
+    .specialists {
+        flex-direction: column;
+        gap: 1em;
+        padding: 1em;
+        width: 90%;
+    }
+    .specialist {
+        flex: 0 1 auto;
+        width: 100%;
+        max-width: none;
+    }
+    .specialist ul {
+        text-align: left;
+        list-style-position: inside;
+        padding-left: 20px;
+        margin: 0;
+    }
+
+    /* Services */
+    .booking-btn p a {
+        text-decoration: none;
+        padding: 0.5em;
+        border-radius: 0.5em;
+    }
+
+    /* Service table */
+    .servicecontainer {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    .td {
+        padding: 15px;
+        width: 33%;
+    }
+    .span {
+        font-size: min(max(15px, 1.8vw), 30px);
+    }
+
+    /* Booking form */
+    .bookingform {
+        text-align: left;
+        color: grey;
+        padding: 2em;
+    }
+
+    /* Contact Us */
+    .contacts {
+        display: flex;
+        gap: 20px;
+        justify-content: space-around;
+        padding: 20px;
+    }
+    .contact {
+        padding: 15px;
+        border: 1px solid #1e152a;
+        border-radius: 8px;
+        flex: 1;
+        max-width: 45%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .contacts p a {
+        color: #1e152a;
+        text-decoration: underline;
+    }
+    .maps {
+        position: relative;
+        padding: 0.625em;
+        height: 18.75em;
+        overflow: hidden;
+        border: 1px solid #1e152a;
+        border-radius: 0.5em;
+    }
+    .maps iframe {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100% !important;
+        height: 100% !important;
+    }
 }
