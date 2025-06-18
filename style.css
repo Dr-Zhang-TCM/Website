@@ -6,11 +6,11 @@ body {
     margin: 0 auto;
     padding: 0;
     line-height: 1.6;
-    background-color: #a5c882;
-    color: #1e152a;
+    background-color: #fff;
+    color: #9621de;
 }
 header {
-    background: #1e152a;
+    background: #9621de;
     color: #fff;
     padding: 1.5625em 0.625em;
     display: flex;
