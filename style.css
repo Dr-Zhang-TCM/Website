@@ -95,28 +95,27 @@ main p a:hover {
 
 /* Services */
 .booking-btn p a {
-    color: #1e152a;
+    color: #fff;
     text-decoration: none;
-    border: 1px solid #F7DD72;
+    border: 1px solid #9621de;
     padding: 0.5em;
     border-radius: 0.5em;
-    background-color: #F7DD72;
+    background-color: #9621de;
 }
 .booking-btn p a:hover {
-    color: #fff;
-    border: 1px solid #1e152a;
+    color: #9621de;
+    border: 1px solid #000;
     padding: 0.5em;
     border-radius: 0.5em;
-    background-color: #1e152a;
+    background-color: #000;
 }
-
-/* Service table */
 .servicecontainer {
     width: 90%;
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: left;
+    border-color: #9621de;
 }
 .td {
     padding: 15px;
