@@ -121,6 +121,7 @@ main p a:hover {
 .td {
     padding: 15px;
     width: 33%;
+    border: 1px solid #9621de;
 }
 .span {
     font-size: min(max(15px, 1.8vw), 30px);
