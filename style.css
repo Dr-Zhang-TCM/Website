@@ -183,9 +183,10 @@ main p a:hover {
 
 
 /* Mobile settings */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     /* Main settings */
     body {
+        font-size: 2.5vw;
         margin: 0 auto;
         padding: 0;
         line-height: 1.6;
