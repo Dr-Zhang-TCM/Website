@@ -104,10 +104,10 @@ main p a:hover {
 }
 .booking-btn p a:hover {
     color: #9621de;
-    border: 1px solid #000;
+    border: 1px solid #f2f2f2;
     padding: 0.5em;
     border-radius: 0.5em;
-    background-color: #000;
+    background-color: #fff;
 }
 .servicecontainer {
     width: 90%;
