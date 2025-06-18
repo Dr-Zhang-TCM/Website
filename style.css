@@ -116,7 +116,7 @@ main p a:hover {
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: left;
-    border-color: #9621de;
+    border: 1px solid #9621de;
 }
 .td {
     padding: 15px;
