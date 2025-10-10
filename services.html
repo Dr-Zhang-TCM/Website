@@ -21,64 +21,82 @@
     </header>
     <main>
         <h1>Services</h1>
-        <div class="booking-btn">
-            <p><a href="/home">Return Home</a></p><!-- Book appointments here -->
+        <button class="collapsible">Acupuncture</button>
+        <div class="content">
+            
+            <p>
+                Depending on your condition, we may suggest doing one or more techniques. Treatmeants with "mix and match" techniques could include:<br>Traditional, Abdominal, Brain/Scalp, Ear, Plum Blossom Hammer.
+            </p>
+            <h4>Extras</h4>
+            <table>
+                <tr>
+                    <td>Thread Embedding</td>
+                    <td>£20 per thread</td>
+                </tr>
+                <tr>
+                    <td>Beauty</td>
+                    <td>£80 for 30 minutes</td>
+                </tr>
+                
+            </table>
         </div>
 
-        <table class="servicecontainer"><!-- Services Table -->
-            <tr><!-- Service 1 -->
-                <td><span>Service</span></td>
-                <td><span>Price</span></td>
-                <td><span>Practitioner</span></td>
-            </tr>
-            <tr><!-- Service 2 -->
-                <td><span>Herbal</span></td>
-                <td><span>£60</span></td>
-                <td><span>Either</span></td>
-            </tr>
-            <tr><!-- Service 3 -->
-                <td><span>Acupuncture</span></td>
-                <td><span>£60 for 30 minutes</span></td>
-                <td><span>Either</span></td>
-            </tr>
-            <tr><!-- Service 4 -->
-                <td><span>Tui na</span></td>
-                <td><span>£60 for 30 minutes</span></td>
-                <td><span>Either</span></td>
-            </tr>
-            <tr><!-- Service 5 -->
-                <td><span>Moxa</span></td>
-                <td><span>£50 for 30 minutes</span></td>
-                <td><span>Either</span></td>
-            </tr>
-            <tr><!-- Service 5 -->
-                <td><span>Reflexology</span></td>
-                <td><span>£60 for 30 minutes</span></td>
-                <td><span>Either</span></td>
-            </tr>
-            <tr><!-- Service 6 -->
-                <td><span>Cupping</span></td>
-                <td><span>£30 for 15 minutes</span></td>
-                <td><span>Either</span></td>
-            </tr>
-            <tr><!-- COMBO DEALS -->
-                <td class="combo"><span>Combo Deals:</span></td>
-            </tr>
-            <tr><!-- COMBO 1 -->
-                <td><span>Acupuncture & Tui na, get magic lamp treatment for free</span></td>
-                <td><span>£100 for 60 minutes</span></td>
-                <td><span>Either</span></td>
-            </tr>
-            <tr><!-- COMBO 2 -->
-                <td><span>Tui na, get cupping treatment for free</span></td>
-                <td><span>£100 for 60 minutes</span></td>
-                <td><span>Either</span></td>
-            </tr>
-        </table>
+        <h2>Massage</h2>
+        <button class="collapsible">Tui na</button>
+        <div class="content">
+            <p>£60 for 30 minutes</p>
+        </div>
+        <button class="collapsible">Reflexology</button>
+        <div class="content">
+            <p>£60 for 30 minutes</p>
+        </div>
+        <button class="collapsible">Cupping</button>
+        <div class="content">
+            <p>£30 for 15 minutes</p>
+        </div>
+
+        <h2>Stand Alones</h2>
+        <button class="collapsible">Herbal</button>
+        <div class="content">
+            <p>£60</p>
+        </div>
+        <button class="collapsible">Moxa</button>
+        <div class="content">
+            <p>£50 for 30 minutes</p>
+        </div>
+    
+        <h2>Combo Deals</h2>
+        <button type="button" class="collapsible">Acupuncture & Tui na</button>
+        <div class="content">
+            <p>£105 for 60 minutes, get magic lamp for free</p>
+        </div>
+        <button type="button" class="collapsible">Tui na</button>
+        <div class="content">
+            <p>£105 for 60 minutes, get cupping treatment for free</p>
+        </div>
+
         <div class="booking-btn">
             <p><a href="/contact">To book an appointment, call us!</a></p>
             <p><a href="/about">Find out more aboout our practitioners</a></p>
         </div>
     </main>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
 </body>
 </html>
