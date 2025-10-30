@@ -29,9 +29,8 @@ body {
 }
 .nav__menu ul li {
     list-style: none;
-}
-.nav__menu ul li {
     text-decoration: none;
+    list-style: none;
     color: #fff;
     padding: 1rem;
     display: block;
