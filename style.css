@@ -15,7 +15,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #9621de;
+    color: #fff;
+    background-color: #9621de;
 }
 .nav__logo {
     font-size: 1.5rem;
@@ -31,11 +32,11 @@ body {
 }
 .nav__menu ul li {
     text-decoration: none;
-    color: #9621de;
+    color: #fff;
     padding: 1rem;
     display: block;
 }
-.nav_menu li:hover {
+.nav__menu li:hover {
     background-color: rgba(255, 255, 255, 0.5);
 }
 .nav__hamburger {
@@ -51,7 +52,7 @@ body {
 .nav__hamburger__line {
     height: 0.188rem;
     width: 100%;
-    background-color: #9621de;
+    background-color: #fff;
     border-radius: 0.625rem;
     transition: all ease-in-out 0.2s;
 }
