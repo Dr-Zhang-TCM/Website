@@ -55,6 +55,9 @@ body {
     border-radius: 0.625rem;
     transition: all ease-in-out 0.2s;
 }
+.nav__hamburger.active {
+    color: #fff;
+}
 header {
     background: #9621de;
     color: #fff;
