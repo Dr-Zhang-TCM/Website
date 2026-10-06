@@ -37,27 +37,6 @@ body {
 .nav__menu li:hover {
     background-color: rgba(255, 255, 255, 0.5);
 }
-.nav__hamburger {
-    width: 1.875rem;
-    height: 1.313rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-around;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-}
-.nav__hamburger__line {
-    height: 0.188rem;
-    width: 100%;
-    color: #fff;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 0.625rem;
-    transition: all ease-in-out 0.2s;
-}
-.nav__hamburger.active {
-    color: #fff;
-}
 header {
     background: #9621de;
     color: #fff;
@@ -163,6 +142,74 @@ td {
 .homecontainer {
     text-align: left;
     justify-content: flex-start;
+}
+
+/* Carousel */
+.carousel {
+    position: relative;
+    max-width: 62.5rem;
+    margin: 1.5rem auto;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+.carousel__track {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+.carousel__track::-webkit-scrollbar { display: none; }
+.carousel__slide {
+    flex: 0 0 100%;
+    margin: 0;
+    scroll-snap-align: center;
+}
+.carousel__slide img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+.carousel__btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2.75rem;
+    height: 2.75rem;
+    border: none;
+    border-radius: 50%;
+    background: rgba(150, 33, 222, 0.8);
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.carousel__btn:hover { background: #9621de; }
+.carousel__btn--prev { left: 0.75rem; }
+.carousel__btn--next { right: 0.75rem; }
+.carousel__dots {
+    position: absolute;
+    bottom: 0.75rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.carousel__dot {
+    width: 0.7rem;
+    height: 0.7rem;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+}
+.carousel__dot.is-active { background: #9621de; }
+
+@media screen and (max-width: 550px) {
+    .carousel { margin: 1rem 0; border-radius: 0; }
+    .carousel__btn { width: 2.25rem; height: 2.25rem; }
 }
 
 /* About Us */
